@@ -1,11 +1,19 @@
-# Run Vanila - Editor de Código Web
+# Run Vanila - Editor de Código Web Moderno
 
 ![Svelte](https://img.shields.io/badge/Svelte-5.49.2-FF3E00?logo=svelte&logoColor=white)
 ![SvelteKit](https://img.shields.io/badge/SvelteKit-2.50.2-FF3E00?logo=svelte&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.18-06B6D4?logo=tailwindcss&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7.3.1-646CFF?logo=vite&logoColor=white)
 
-**Run Vanila** es un editor de código web en línea que permite escribir, compilar y visualizar código HTML, CSS y JavaScript en tiempo real. Similar a CodePen o JSFiddle, pero con una interfaz moderna y características avanzadas.
+**Run Vanila** es un editor de código web en línea construido con tecnologías modernas. Permite escribir, compilar y visualizar código HTML, CSS y JavaScript en tiempo real, con una interfaz limpia y características avanzadas para desarrolladores.
+
+**✨ Características destacadas:**
+- 3 editores diferentes (Monaco, Ace, CodeMirror)
+- Compilación en tiempo real con vista previa
+- Compartir código en URLs comprimidas
+- Modo Live para presentaciones
+- Descarga proyectos como ZIP
+- Consola integrada con historial
 
 ## ✨ Características
 
@@ -116,3 +124,19 @@ const url = `https://tu-dominio.com/?code=${code}`;
 - **Ace Editor** - Editor ligero para móviles
 - **CodeMirror 6** - Editor extensible
 - **lz-string** - Compresión para URLs
+
+## 🤝 Contribuir
+
+1. **Fork** el repositorio
+2. **Crea una rama** (`git checkout -b feature/nueva-funcionalidad`)
+3. **Commit** los cambios (`git commit -am 'Añadir nueva funcionalidad'`)
+4. **Push** a la rama (`git push origin feature/nueva-funcionalidad`)
+5. **Abre un Pull Request**
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+**Run Vanila** - Un editor de código web moderno y potente para prototipado rápido y enseñanza.

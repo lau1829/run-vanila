@@ -1,0 +1,197 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+
+
+.ace-merbivore .ace_folding-enabled {
+    background: #161616 !important;
+}
+.ace-monokai .ace_folding-enabled {
+     background: #272822 !important;   
+}
+.ace-github .ace_folding-enabled {
+     background: white !important;   
+}
+
+
+/* Estilos personalizados para Ace Editor Autocomplete - Estilo Monaco */
+.ace_editor.ace_autocomplete {
+    background: #1e1e1e !important;
+    border: 1px solid #454545 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+    width: 350px !important;
+    max-height: 300px !important;
+}
+
+.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {
+    background: #094771 !important;
+}
+
+.ace_editor.ace_autocomplete .ace_marker-layer .ace_line-hover {
+    background: #2a2d2e !important;
+    border: none !important;
+}
+
+.ace_editor.ace_autocomplete .ace_completion-highlight {
+    color: #4ec9b0 !important;
+    font-weight: 600 !important;
+}
+
+.ace_editor.ace_autocomplete .ace_scroller {
+    background: #1e1e1e !important;
+}
+
+.ace_editor.ace_autocomplete .ace_content {
+    background: #1e1e1e !important;
+    color: #d4d4d4 !important;
+}
+
+.ace_editor.ace_autocomplete .ace_line {
+    padding: 2px 8px !important;
+    color: #d4d4d4 !important;
+    font-size: 13px !important;
+    line-height: 20px !important;
+}
+
+/* Iconos de tipo para autocompletado */
+.ace_editor.ace_autocomplete .ace_completion-meta {
+    color: #858585 !important;
+    font-size: 11px !important;
+    margin-left: 8px !important;
+    font-style: italic !important;
+}
+
+/* Scrollbar personalizado para autocompletado */
+.ace_editor.ace_autocomplete .ace_scrollbar {
+    background: #1e1e1e !important;
+}
+
+.ace_editor.ace_autocomplete .ace_scrollbar-inner {
+    background: #424242 !important;
+}
+
+.ace_editor.ace_autocomplete .ace_scrollbar-inner:hover {
+    background: #4e4e4e !important;
+}
+
+/* Estilos para diferentes temas de Ace */
+.ace-merbivore.ace_editor.ace_autocomplete {
+    background: #161616 !important;
+    border-color: #3a3a3a !important;
+}
+
+.ace-merbivore.ace_editor.ace_autocomplete .ace_scroller,
+.ace-merbivore.ace_editor.ace_autocomplete .ace_content {
+    background: #161616 !important;
+}
+
+.ace-merbivore.ace_editor.ace_autocomplete .ace_line {
+    color: #e6e1dc !important;
+}
+
+.ace-merbivore.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {
+    background: #333435 !important;
+}
+
+.ace-monokai.ace_editor.ace_autocomplete {
+    background: #272822 !important;
+    border-color: #3e3d32 !important;
+}
+
+.ace-monokai.ace_editor.ace_autocomplete .ace_scroller,
+.ace-monokai.ace_editor.ace_autocomplete .ace_content {
+    background: #272822 !important;
+}
+
+.ace-monokai.ace_editor.ace_autocomplete .ace_line {
+    color: #f8f8f2 !important;
+}
+
+.ace-monokai.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {
+    background: #49483e !important;
+}
+
+.ace-monokai.ace_editor.ace_autocomplete .ace_completion-highlight {
+    color: #a6e22e !important;
+}
+
+.ace-github.ace_editor.ace_autocomplete {
+    background: #ffffff !important;
+    border-color: #d1d5da !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.ace-github.ace_editor.ace_autocomplete .ace_scroller,
+.ace-github.ace_editor.ace_autocomplete .ace_content {
+    background: #ffffff !important;
+}
+
+.ace-github.ace_editor.ace_autocomplete .ace_line {
+    color: #24292e !important;
+}
+
+.ace-github.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line {
+    background: #0366d6 !important;
+}
+
+.ace-github.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line .ace_line {
+    color: #ffffff !important;
+}
+
+.ace-github.ace_editor.ace_autocomplete .ace_completion-highlight {
+    color: #0366d6 !important;
+}
+
+.ace-github.ace_editor.ace_autocomplete .ace_completion-meta {
+    color: #6a737d !important;
+}
+
+/* Animación suave para el popup */
+.ace_editor.ace_autocomplete {
+    animation: aceAutocompleteSlideIn 0.15s ease-out;
+}
+
+@keyframes aceAutocompleteSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mejorar la legibilidad del texto seleccionado */
+.ace_editor.ace_autocomplete .ace_marker-layer .ace_active-line .ace_line {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+}
+
+/* Separador visual entre items */
+.ace_editor.ace_autocomplete .ace_line {
+    border-bottom: 1px solid transparent !important;
+}
+
+.ace_editor.ace_autocomplete .ace_line:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+
+/* ========================================
+   Estilos para Ace Tooltip (Documentación)
+   ======================================== */
+
+/* Tooltip base - Estilo Monaco */
+.ace_tooltip.ace_doc-tooltip {
+    background: #1e1e1e !important;
+    border: 1px solid #454545 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5) !important;
+    color: #d4d4d4 !important;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+    font-size: 13px !important;
+}
