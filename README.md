@@ -29,6 +29,7 @@
 ## 🚀 Cómo Usar
 
 ### Opción 1: Usar la versión en línea
+
 Visita la página web del proyecto para usar el editor directamente en tu navegador.
 
 ### Opción 2: Clonar y ejecutar localmente
@@ -41,12 +42,26 @@ cd run-vanila
 # 2. Instalar dependencias
 npm install
 
-# 3. Ejecutar en modo desarrollo
+# 3. Instalar paquetes principales
+npm install svelte @sveltejs/kit vite
+
+# 4. Instalar paquetes de editores
+npm install monaco-editor ace-builds codemirror
+
+# 5. Instalar paquetes de utilidades
+npm install lz-string jszip
+# 6. Instalar dependencias de desarrollo
+npm install -D tailwindcss @tailwindcss/vite svelte-check typescript
+
+# 7. Ejecutar en modo desarrollo
 npm run dev
 
-# 4. Abrir en el navegador
+# 8. Abrir en el navegador
 # http://localhost:5173
 ```
+
+
+
 
 ### Opción 3: Desplegar tu propia instancia
 
